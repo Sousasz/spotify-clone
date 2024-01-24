@@ -1,0 +1,243 @@
+/*Sidebar e Footer*/
+
+body {
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 320px;
+}
+.sidebar__navigation {
+    background-color: var(--bg-bottom);
+    border-radius: 8px;
+    padding: 5px 0 0 10px;
+}
+.sidebar__navigation .logo {
+    background: var(--bg-bottom);
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+.logo img {
+    width: 80px;
+}
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url('/fonts/Gotham-Font/Gotham-Bold.otf');
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--font-gotham-bold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar nav ul li a .fa {
+    font-size: 20px;
+}
+.sidebar nav ul li a .inf__search {
+    margin-left: 20px;
+}
+.sidebar nav ul li a .inf__home {
+    margin-left: 18px;
+}
+
+
+
+/*Biblioteca*/
+.library {
+    background-color: var(--bg-bottom);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 325px;
+}
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+.library .library__button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-gotham-bold);
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+.library .library__content .fa-plus {
+    margin: 24px 10px;
+}  
+.section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #242424;
+    border-radius: 7px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0px 0px 30px;
+    padding: 16px 20px;
+}
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+.section-playlist__content .text/*Para ambas divs*/ {
+    padding-bottom: 14px;
+    color: white;
+}
+.section-playlist__content .title {
+    font-weight: 700;
+    font-family: var(--font-gotham-bold);
+}
+.section-playlist__content .subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--font-dm-sans);
+}
+.section-playlist__content .section-playlist__button {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-family: var(--font-gotham-bold);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+    border: 0px;
+    width: 113px;
+    cursor: pointer;
+}
+.sidebar .cookies {
+    margin: 0px 20px 45px;
+}
+.sidebar .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar .cookies a:hover {
+    text-decoration: underline;
+}
+.sidebar .languages {
+    height: 150px;
+}
+.sidebar .languages .languages__button {
+    background-color: var(--bg-bottom);
+    font-family: var(--font-gotham-bold);
+    font-size: 13px;
+    color: white;
+
+    height: 33px;
+    padding: 12px;
+    margin-left: 8px;
+
+    border-radius: 20px;
+    border: 1px solid #878787;
+    gap: 5px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+.sidebar .languages .languages__button .fa {
+    font-size: 16px;
+}
+
+/*Footer*/
+
+.premium__footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5.2rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.premium__footer .premium__footer__content {
+    background-image: linear-gradient(to right, #ae2896, #509bf5);
+    height: 80%;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.premium__footer .premium__footer__content .inf__text {
+    font-family: var(--font-dm-sans);
+    color: white;
+    margin-left: 1rem;
+}
+.premium__footer .premium__footer__content .inf__text p {
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.premium__footer .premium__footer__content .inf__text small {
+    font-weight: 500;
+    font-size: 14px;
+}
+.premium__footer .premium__footer__content .premium__subscribe__button {
+    margin-right: 1.5rem;
+}
+.premium__footer .premium__footer__content .premium__subscribe__button a button {
+    background-color: white;
+    font-family: var(--font-gotham-bold);
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    height: 48px;
+    width: 195px;
+}

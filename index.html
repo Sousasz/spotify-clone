@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet" href="./src/styles/vars.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
+
+    <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" />
+    <!--O reset retira todos os estilos padrões do CSS-->
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+
+</head>
+
+<body>
+    
+    <!--Barra lateral-->
+    <div class="sidebar">
+
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo do Spotify" />
+                </a>
+            </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"></span>
+                            <span class="inf__home">Início</span>
+                        </a>
+                    </li>
+
+                    <li> 
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span class="inf__search">Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar</span>
+                    
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda" />
+                    </button>
+
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita" />
+                    </button>
+
+                    <div class="header__search">
+                        <img src="./src/assets/icons/search.png" alt="" />
+                        <input id="search" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                    </div>
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe__account">Inscrever-se</button>
+                    <button class="login__account">Entrar</button>                        
+                </div>
+            </nav>
+
+
+            <div class="card-playlists">
+                <div class="intro">
+                    <h1 id="greeting"></h1>
+                    <h3 id="session">Navegar por todas as seções</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="premium__footer">
+        <div class="premium__footer__content">
+            <div class="inf__text">
+                <p>Testar o Premium de graça</p>
+                <small>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</small>
+            </div>
+
+            <div class="premium__subscribe__button">
+                <a href="">
+                    <button>
+                        <p>Inscreva-se grátis</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

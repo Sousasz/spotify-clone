@@ -1,0 +1,118 @@
+/*Header (main)*/
+
+/*For JavaScript*/
+
+
+main .main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 340px;
+    margin-right: 56px;
+}
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--bg-bottom);
+}
+.header__navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+}
+.arrow-left,.arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 60px;
+}
+.header__login .subscribe__account {
+    background-color: transparent;    
+    color: var(--color-text-btn);
+}
+.header__login .login__account {
+    background-color: var(--color-bg-white);
+    border-radius: 50px;
+    height: 50px;
+    width: 110px;
+    font-weight: 500;
+}
+.header__login button {
+    font-family: var(--font-gotham-bold);
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.header__search {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+.header__search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+.header__search input {
+    background-color: #242424;
+    border: none;
+    margin: 10px;
+    color: white;
+    outline: none;
+}
+.header__search:hover {
+    border: 1px solid var(--color-bg-white);
+}
+
+/*Playlist*/
+
+.card-playlists {
+    background-color: var(--bg-bottom);
+    max-width: 71.8vw;
+    height: 70vh;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+.card-playlists .intro {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    padding: 40px 0px 0px 22px;
+}
+.card-playlists .intro h1 {
+    font-size: 32px;
+}
+.card-playlists .intro h3 {
+    font-size: 24px;
+    margin-top: 48px;
+}
+.card-playlists .intro h1, .card-playlists .intro h3 {
+    background-color: var(--color-bg-btn);
+    font-family: var(--font-dm-sans);  
+    font-weight: 700;
+    color: var(--color-bg-white);
+}

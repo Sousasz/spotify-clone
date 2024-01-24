@@ -1,0 +1,32 @@
+Ferramenta FontAwesome => Ferramenta que nos fornece a utilização de ícones 
+
+padding/margin: baixo direita cima esquerda; (relógio)
+
+Posso desenvolver um outro documento CSS e criar fontes 
+
+Exemplo:
+
+:root {
+    --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+OBS: 'root' é a raiz do projeto
+OBS: Para carregar documentos que possuam variáveis CSS, importamos esses antes de qualquer outro documento
+
+----------------------------------------------------------------------------------
+
+Atributo maxlenght => Quantidade de caracteres dentro de um campo (input)
+
+Unidade vw (viewport width) => Quando usada com o atributo max-width, define uma largura máxima considerando o display
+Unidade vh (viewport height) => Altura do display
+
+ document.body.innerHTML += `
+    <section>
+      <h1>Contato ${index}</h1> 
+      <p>Nome: ${agenda[index].nome}</p>
+      <p>Telefone: ${agenda[index].telefone}</p>
+      <br>
+    </section>
+    `
+
+    getHours() => Exibe apenas a hora

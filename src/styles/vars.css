@@ -1,0 +1,12 @@
+:root {
+    /*Fonts*/
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-gotham-bold: GothamBold;
+
+    /*Colors*/
+    --bg-icon: #131313;
+    --bg-bottom: #121212;
+    --bg-arrow-color: rgba(0, 0, 07);
+    --color-text-btn: #a7a7a7;
+    --color-bg-white: #fff;
+}
