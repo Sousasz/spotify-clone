@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/styles/vars.css" />
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
     <link rel="stylesheet" href="./src/styles/main-content.css" />
+    <link rel="stylesheet" href="./src/styles/media-query.css" />
 
     <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
@@ -93,7 +94,7 @@
 
                     <div class="header__search">
                         <img src="./src/assets/icons/search.png" alt="" />
-                        <input id="search" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" value="" autocomplete="off"/>
                     </div>
                 </div>
 
@@ -104,11 +105,149 @@
             </nav>
 
 
-            <div class="card-playlists">
-                <div class="intro">
-                    <h1 id="greeting"></h1>
-                    <h3 id="session">Navegar por todas as seções</h3>
+            <div class="playlist-container">
+                <div id="result-playlists" class="">
+                    <div class="playlists">
+                        <div class="intro">
+                            <h1 id="greeting"></h1>
+                            <h3 id="session">Navegar por todas as seções</h3>
+                        </div>
+            
+                        <!--Grid de playlists-->
+                        <div class="scroll__list">
+                            <div class="scroll__list__content">
+                                <div class="cards-grid">
+            
+                                    <!--Cards-->
+                                    <a href="" class="card-1">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/1.jpeg" alt="Card de boas festas" />
+                                            <span>Boas festas</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="" class="card-2">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/2.png" alt="Card de feitos para você" />
+                                            <span>Feitos para você</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-3">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/3.jpeg" alt="Card de lançamentos" />
+                                            <span>Lançamentos</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-4">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/4.jpeg" alt="Card de creators" />
+                                            <span>Creators</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-5">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/5.jpeg" alt="Card de para treinar" />
+                                            <span>Para treinar</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-6">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/6.jpeg" alt="Card de podcasts" />
+                                            <span>Podcasts</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-7">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/7.jpeg" alt="Card de sertanejo" />
+                                            <span>Sertanejo</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-8">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/8.jpeg" alt="Card de samba e pagode" />
+                                            <span>Samba e pagode</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-9">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/9.jpeg" alt="Card de funk" />
+                                            <span>Funk</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-10">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/10.jpeg" alt="Card de MPB" />
+                                            <span>MPB</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-11">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/11.jpeg" alt="Card de rock" />
+                                            <span>Rock</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-12">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/12.jpeg" alt="Card de hip hop" />
+                                            <span>Hip Hop</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-13">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/13.jpeg" alt="Card de indie" />
+                                            <span>Indie</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-14">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/14.jpeg" alt="Card de relax" />
+                                            <span>Relax</span>
+                                        </div>
+                                    </a>
+            
+                                    <a href="" class="card-15">
+                                        <div class="card-body">
+                                            <img src="./src/assets/playlist/15.jpeg" alt="Card de música latina" />
+                                            <span>Música Latina</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <span id="space__footer"></span>
+                        </div>
+                    </div>
                 </div>
+
+                <div id="result-artist" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img id="artist-img" class="artist-img" />
+                                <div class="play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
@@ -129,6 +268,6 @@
             </div>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
