@@ -1,0 +1,50 @@
+@media screen and (max-width: 880px) {
+    .scroll__list__content .cards-grid {
+        grid-template-columns: 190px 190px;
+        grid-gap: 40px;
+        row-gap: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .playlists .intro h1 {
+        font-size: 25px;
+    }
+    .playlists .intro h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .playlists .intro h1 {
+        font-size: 25px;
+    }
+    .playlists .intro h3 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .scroll__list__content .cards-grid {
+        grid-template-columns: repeat(2, 190px);
+        grid-gap: 10px;
+        row-gap: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-grid a {
+        width: 180px;
+        height: 167px;
+    }
+    .card-body img {
+        width: 107px;
+        height: auto;
+        position: absolute;
+        transform: rotate(25deg) translate(80%, 20%);
+    }
+}
