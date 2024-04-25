@@ -75,7 +75,3 @@ for (let index = 0; index < horasNoite.length; index++) {
 
         requestApi(searchTerm)
     })
-
-    const notasAlunos = () => {
-        
-    }
